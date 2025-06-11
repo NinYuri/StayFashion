@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay Fashion</title>
+    <link rel="icon" href="img/Logo-icon.ico">
+    <link rel="stylesheet" href="styleAhome.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar transparent">
+            <div class="container-logo">
+                <img id="logo-img" src="img/Logo.png" alt="Stay Fashion Logo">
+                <h2>Stay Fashion</h2>
+            </div>
+            <nav class="navigation">
+                <li class="list">
+                    <a href="#">Registrar 
+                        <span><ion-icon id="icon-menu" name="caret-down-outline"></ion-icon></span>
+                        <input type="checkbox" class="dropdown-check">
+                    </a>
+                    <ul class="dropdown-content">
+                        <li id="client"><a href="Alogincli.html">Cliente</a></li>
+                        <li><a href="Aloginemp.html">Empleado</a></li>
+                    </ul>
+                </li>
+                <a href="#">Empleados</a>
+                <a href="#">Clientes</a>
+                <a href="#">Servicios</a>
+                <button type="button" class="btn" id="btn-logout">Cerrar Sesión</button>
+            </nav>
+        </div>
+
+        <div class="header-box">
+            <div id="container-header">
+                <p class="header-title" id="title-white">BIENVENIDA</p>
+                <p class="header-title" id="title">BIENVENIDA</p>
+                <p id="text"><i>Es un honor recibirte de nuevo</i></p>
+                <img src="img/Model-home.png" alt="Modelo" id="model">
+            </div>
+        </div>
+    </header>
+
+    <!--Iconos-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!--Funcionalidad-->
+    <script>
+        const btnLogout = document.querySelector("#btn-logout");
+        btnLogout.addEventListener('click', () => {
+            window.location.href = 'login.html';
+        });
+    </script>
+
+</body>
+</html>
